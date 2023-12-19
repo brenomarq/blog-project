@@ -67,8 +67,10 @@ li {
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
+    padding-bottom: 10px;
     font-family: 'Whisper', cursive;
     font-size: 1.7rem;
+    border-bottom: 1px solid #000;
 }
 
 .intro > h1 {
@@ -87,6 +89,7 @@ li {
     background-color: #000;
     color: #FFF;
     transition: 0.5s;
+    font-family: 'Quicksand', sans-serif;
 }
 
 #create:hover {
@@ -165,4 +168,45 @@ li {
 
 .post-info > * {
     margin: 4px 0;
+}
+
+/*Posts section*/
+.post {
+    margin: 15px 0;
+    padding: 10px;
+    width: 600px;
+    border-radius: 15px;
+    background-color: #000;
+    color: #FFF;
+}
+
+.post h2,
+.post h3 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.post-buttons {
+    display: flex;
+    justify-content: end;
+    padding-top: 10px;
+}
+
+.post-header {
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 10px;
+}
+
+.post-header h3 {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.post-content {
+    margin: 10px 0;
+}
+
+#edit,
+#delete {
+    margin: 0 5px;
+    color: #FFF;
 }
