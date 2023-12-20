@@ -170,6 +170,17 @@ li {
     margin: 4px 0;
 }
 
+.publish {
+    margin-top: 10px;
+    align-self: end;
+    justify-self: end;
+    transition: 0.5s;
+}
+
+.publish:hover {
+    background-color: rgb(255, 255, 255, 0.6);
+}
+
 /*Posts section*/
 .post {
     margin: 15px 0;
@@ -208,5 +219,17 @@ li {
 #edit,
 #delete {
     margin: 0 5px;
+    border: 0;
+    background-color: #000;
     color: #FFF;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#edit:hover {
+    color: #008000;
+}
+
+#delete:hover {
+    color: #FF0000;
 }
