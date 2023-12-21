@@ -107,12 +107,16 @@ li {
 }
 
 #fade.hide,
-#modal.hide {
+#modal.hide,
+#upd-modal.hide,
+#del-modal.hide {
     opacity: 0;
     pointer-events: none;
 }
 
-#modal {
+#modal,
+#upd-modal,
+#del-modal {
     padding: 20px;
     border-radius: 7px;
     border: 1px solid #FFF;
@@ -128,13 +132,17 @@ li {
 }
 
 #fade,
-#modal {
+#modal,
+#upd-modal,
+#del-modal {
     transition: 0.5s;
     opacity: 1;
     pointer-events: all;
 }
 
-#modal.hide {
+#modal.hide,
+#upd-modal.hide,
+#del-modal.hide {
     top: 0;
 }
 
@@ -148,12 +156,14 @@ li {
     border-bottom: 1px solid #FFF;
 }
 
-#close {
+#close-create,
+#del {
     color: #FF0000;
     transition: 0.5s;
 }
 
-#close:hover {
+#close-create:hover,
+#del:hover {
     background-color: #FF0000;
     color: #FFF;
 }
@@ -170,15 +180,28 @@ li {
     margin: 4px 0;
 }
 
-.publish {
+.publish,
+.update {
     margin-top: 10px;
     align-self: end;
     justify-self: end;
     transition: 0.5s;
 }
 
-.publish:hover {
+.publish:hover,
+.update:hover,
+#cancel:hover {
     background-color: rgb(255, 255, 255, 0.6);
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: end;
+    padding-top: 10px;
+}
+
+.modal-buttons > * {
+    margin-left: 20px;
 }
 
 /*Posts section*/

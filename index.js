@@ -30,13 +30,20 @@ app.post("/create", (req, res) => {
         id: userPosts.length+1, title, author, content
     };
     userPosts.push(newPost);
-    console.log(userPosts);
     res.redirect("/");
 });
 
 // Update the selected post
 app.put("/update/:id", (req, res) => {
-    console.log("It worked...");
+    const postId = parseInt(req.params.id);
+    const { title, author, content} = req.body;
+    const postIndex = userPosts.findIndex(post => post.id === postId);
+    if (postIndex !== -1) {
+        userPosts[postIndex] = {
+            id: postId, title, author, content
+        }
+    }
+    res.redirect("/");
 });
 
 // Delete the selected post

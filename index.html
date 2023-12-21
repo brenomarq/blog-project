@@ -39,34 +39,19 @@
             <button id="create" class="btn">Create</button>
         </div>
         <!--The posts will be listed right after the intro section-->
-        <div class="post">
-            <h2>Title</h2>
-            <h3>Author</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto omnis voluptate ducimus nulla
-            dolore rem at. Sapiente accusantium iste aspernatur, rerum, architecto repellat commodi similique eum sint
-            nam laboriosam corrupti.</p>
-            <div class="post-buttons">
-                <a id="edit" href="/edit">Edit</a>
-                <a id="delete" href="/delete">Delete</a>
-            </div>
-        </div>
     </main>
     <!--Modal-->
     <div id="fade"></div>
-    <div id="modal" class="hide">
+    <div id="del-modal">
         <div class="modal-header">
-            <h2>Write your thoughts:</h2>
-            <button id="close" class="btn">Close</button>
+            <h2>Are you sure you want to delete this post?</h2>
         </div>
-        <form action="/create" method="post" class="post-info">
-            <label for="title">Title:</label>
-            <input type="text" name="title">
-            <label for="author">Author:</label>
-            <input type="text" name="input">
-            <label for="content">Content:</label>
-            <textarea name="content" id="content" cols="30" rows="10"></textarea>
-            <input type="submit" class="btn">
-        </form>
+        <div class="modal-buttons">
+            <form action="">
+                <button type="submit" id="del" class="btn"> Delete </button>
+            </form>
+            <button id="cancel" class="btn"> Cancel </button>
+        </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
