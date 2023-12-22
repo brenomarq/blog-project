@@ -1,6 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import methodOverride from "method-override";
+import { render } from "ejs";
 
 const app = express();
 const port = 3000;
@@ -34,6 +35,13 @@ app.post("/create", (req, res) => {
 });
 
 // Update the selected post
+app.get("/update/:id", (req, res) => {
+    console.log("Where's the problem?");
+    const postId = parseInt(req.params.id);
+    const post = userPosts.find(post => post.id === postId);
+    res.render("update.ejs", { post });
+});
+
 app.put("/update/:id", (req, res) => {
     const postId = parseInt(req.params.id);
     const { title, author, content} = req.body;
@@ -47,6 +55,12 @@ app.put("/update/:id", (req, res) => {
 });
 
 // Delete the selected post
+app.get("/delete/:id", (req, res) => {
+    const postId = parseInt(req.params.id);
+    const post = userPosts.find(post => post.id === postId);
+    res.render("delete.ejs", { post })
+});
+
 app.delete("/delete/:id", (req, res) => {
     const postId = parseInt(req.params.id);
     userPosts = userPosts.filter(post => post.id !== postId);
