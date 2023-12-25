@@ -60,6 +60,16 @@ li {
     flex-direction: column;
     align-items: center;
     padding: 0 30%;
+    min-height: 73vh;
+}
+
+.no-content {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .intro {
@@ -261,4 +271,23 @@ li {
 
 #delete:hover {
     color: #FF0000;
+}
+
+/*Page footer*/
+#blank-space {
+    height: 73vh;
+}
+
+#journal-footer {
+    background-color: #000;
+    color: #FFF;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.footer-text {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
