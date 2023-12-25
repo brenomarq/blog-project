@@ -36,7 +36,6 @@ app.post("/create", (req, res) => {
 
 // Update the selected post
 app.get("/update/:id", (req, res) => {
-    console.log("Where's the problem?");
     const postId = parseInt(req.params.id);
     const post = userPosts.find(post => post.id === postId);
     res.render("update.ejs", { post });

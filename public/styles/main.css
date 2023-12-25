@@ -291,3 +291,54 @@ li {
     align-items: center;
     justify-content: center;
 }
+
+/*About me page*/
+.about-container {
+    border: 5px solid #000;
+    border-radius: 10px;
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-header {
+    grid-column: span 2;
+    font-size: 50px;
+    font-family: 'Whisper', cursive;
+    margin: 0 50px;
+    border-bottom: 1px solid #000;
+}
+
+.about-pic,
+.about-text {
+    margin-top: 15px;
+    height: 54vh;
+}
+
+.about-pic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.about-pic > *,
+.about-text > * {
+    margin-bottom: 10px;
+}
+
+#my-pic {
+    height: 225px;
+    width: 225px;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 0, 0.6);
+}
+
+.about-text {
+    margin-right: 50px;
+    text-align: justify;
+    font-size: 17px;
+    font-family: 'Quicksand', sans-serif;
+}
+/*Contact me page*/
