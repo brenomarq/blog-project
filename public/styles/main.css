@@ -292,9 +292,9 @@ li {
     justify-content: center;
 }
 
-/*About me page*/
+/*About and Contact page*/
 .about-container {
-    border: 5px solid #000;
+    border: 2px solid #000;
     border-radius: 10px;
     margin: 25px;
     display: grid;
@@ -341,4 +341,59 @@ li {
     font-size: 17px;
     font-family: 'Quicksand', sans-serif;
 }
-/*Contact me page*/
+
+.contact-content {
+    height: 55vh;
+    margin: 20px 50px;
+    background-color: #000;
+    color: #FFF;
+    border-radius: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.contact-header {
+    grid-column: span 2;
+    font-size: 50px;
+    font-family: 'Whisper', cursive;
+    margin: 0 50px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-links > * {
+    margin: 20px;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    color: #000;
+    border: 1px solid #FFF;
+    border-radius: 15px;
+    padding: 15px 50px;
+}
+
+.social-link:hover {
+    background-color: #000;
+    color: #FFF;
+}
+
+.title {
+    font-family: 'Whisper', cursive;
+    font-size: 40px;
+}
+
+.contact-info > * {
+    margin-top: 15px;
+}
